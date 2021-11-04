@@ -3,9 +3,20 @@
   border-color: black;
   border-style: solid;
   border-width: medium;
+  display: flex;
+  flex-direction: column;
   margin-top: 8px;
 }
 
-div p {
-  text-align: center;
+.task-text {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.task-btn {
+  display: flex;
+  justify-content: space-evenly;
 }

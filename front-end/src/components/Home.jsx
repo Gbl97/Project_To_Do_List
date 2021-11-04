@@ -16,10 +16,18 @@ function Home() {
     setTasks([...tasks].concat(newTask));
   };
 
+  const removeTask = (id) => {
+    const updatedTasks = tasks.filter((task) => task.id !== id);
+    setTasks(updatedTasks);
+  };
+
   return (
     <section>
       <AddTasks create={createTask} />
-      <Tasks data={tasks} />
+      <Tasks
+        data={tasks}
+        remove={removeTask}
+      />
     </section>
   );
 }
