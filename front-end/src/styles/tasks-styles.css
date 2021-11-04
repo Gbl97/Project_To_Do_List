@@ -1,0 +1,11 @@
+.task-container {
+  /* background: steelblue; */
+  border-color: black;
+  border-style: solid;
+  border-width: medium;
+  margin-top: 8px;
+}
+
+div p {
+  text-align: center;
+}

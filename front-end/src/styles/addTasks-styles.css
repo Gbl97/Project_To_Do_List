@@ -1,0 +1,31 @@
+.form-container {
+  align-content: center;
+  background: #d3e0d5;
+  border-color: black;
+  border-style: solid;
+  border-width: medium;
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  margin-top: 20px;
+  width: 400px;
+}
+
+.form-container form {
+  margin-top: 25px;
+  width: 400px;
+}
+
+form {
+  align-content: center;
+  display: flex;
+  height: 25px;
+  justify-content: center;
+}
+
+form input {
+  border: none;
+  border-radius: 3px;
+  margin-right: 7px;
+  width: 56%;
+}
