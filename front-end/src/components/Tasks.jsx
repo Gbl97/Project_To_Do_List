@@ -49,13 +49,13 @@ function Tasks({ data, remove, update }) {
     if (task.id === idTask) {
       return (
         <>
-          <button type="button" onClick={(e) => handleSubmit(e, task.idTask)}>Submter Edições</button>
+          <button className="button btn-edit" type="button" onClick={(e) => handleSubmit(e, task.id)}>Submter Edições</button>
         </>
       );
     }
     return (
       <>
-        <button type="button" onClick={() => getIdTasks(task.id)}>Editar</button>
+        <button className="button btn-edit" type="button" onClick={() => getIdTasks(task.id)}>Editar</button>
       </>
     );
   };
@@ -69,7 +69,7 @@ function Tasks({ data, remove, update }) {
           </div>
           <div className="task-btn">
             { ternaryCoditionBtn(task) }
-            <button type="button" onClick={() => remove(task.id)}>Deletar</button>
+            <button className="button btn-delete" type="button" onClick={() => remove(task.id)}>Deletar</button>
           </div>
         </div>
       ))}

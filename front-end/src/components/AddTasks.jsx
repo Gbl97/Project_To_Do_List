@@ -32,6 +32,7 @@ function AddTasks({ create }) {
             onChange={handleInput}
           />
           <button
+            className="btn btn-create"
             data-testid="form-btn"
             type="submit"
           >

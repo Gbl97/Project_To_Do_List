@@ -22,14 +22,25 @@ function Home() {
   };
 
   const updateTask = (idTask, taskEdited, statusEdited) => {
-    const updatedTasks = tasks.map((task) => {
-      if (task.id === idTask) {
-        return { ...task, text: taskEdited, status: statusEdited };
-      }
-      return task;
-    });
-    // console.log(updatedTasks);
-    setTasks(updatedTasks);
+    // Faço a cópia do meu estado
+    const copyTasks = tasks;
+
+    // Encontro a tarefa a ser editada
+    const findTask = copyTasks.find((task) => task.id === idTask);
+
+    // Encontro o índice da tarefa
+    const findIndex = tasks.indexOf(findTask);
+
+    // Atualizado de fato a tarefa
+    findTask.status = statusEdited;
+    findTask.text = taskEdited;
+
+    // Na posição do índice da minha tarefa a ser atualizada,
+    // é deletado a antiga tarefa e adicionado a nova
+    copyTasks.splice(findIndex, 1, findTask);
+
+    // Seto o estado com a tarefa atualizada
+    setTasks(copyTasks);
   };
 
   return (

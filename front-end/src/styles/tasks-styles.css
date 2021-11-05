@@ -1,4 +1,5 @@
 .task-container {
+  background: #d3e0d5;
   /* background: steelblue; */
   border-color: black;
   border-style: solid;
@@ -27,4 +28,40 @@
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 5px;
+}
+
+.button {
+  border:1px solid #25692A;
+  border-radius:4px;
+  cursor:pointer;
+  display:inline-block;
+  font-family:Verdana;
+  font-weight:bold;
+  font-size:13px;
+  padding:4px 6px;
+  text-decoration:none;
+}
+
+.btn-delete {
+  background:linear-gradient(to bottom, #fca8a1 5%, #f61f0e 100%);
+  border-color:#f61f0e;
+  box-shadow:inset 0px 1px 0px 0px #fff4f3;
+  color:#fff;
+  text-shadow:0px 1px 0px #528009;
+}
+
+.btn-delete:hover {
+  background:linear-gradient(to bottom, #f61f0e 5%, #fca8a1 100%);
+}
+
+.btn-edit {
+  background:linear-gradient(to bottom, #86c6f8 5%, #46a7f5 100%);
+  border-color:#46a7f5;
+  box-shadow:inset 0px 1px 0px 0px #d7ecfd;
+  color:#fff;
+  text-shadow:0px 1px 0px #528009; 
+}
+
+.btn-edit:hover {
+  background:linear-gradient(to bottom, #46a7f5 5%, #86c6f8 100%);
 }
