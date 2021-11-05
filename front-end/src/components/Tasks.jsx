@@ -20,8 +20,6 @@ function Tasks({ data, remove, update }) {
   const handleSubmit = (e, id) => {
     e.preventDefault();
     if (taskEdited.length > 0 && statusEdited.length > 0) {
-      // console.log(taskEdited);
-      // console.log(statusEdited);
       update(id, taskEdited, statusEdited);
     }
     getIdTasks(null);

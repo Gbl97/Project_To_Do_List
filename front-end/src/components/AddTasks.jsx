@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import '../styles/addTasks-styles.css';
 
 function AddTasks({ create }) {
-  // const initialTitle = '';
   const [titleTask, setTitle] = useState('');
   const valueTask = useRef();
 
