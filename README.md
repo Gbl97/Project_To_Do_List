@@ -5,7 +5,7 @@
 
 # Observações sobre o Projeto
 
-Até o momento não foi possível realizar o lado do back-end, não consegui desenvolver, por conta de alguns imprevistos e por optar por começar no Front-end, que levou um tempo considerável.
+Até o momento não foi possível realizar o lado do Back-end, não consegui desenvolver, por conta de alguns imprevistos e por optar por começar no Front-end, que levou um tempo considerável.
 
 ---
 
