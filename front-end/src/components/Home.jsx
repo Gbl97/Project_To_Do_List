@@ -21,12 +21,24 @@ function Home() {
     setTasks(updatedTasks);
   };
 
+  const updateTask = (idTask, taskEdited, statusEdited) => {
+    const updatedTasks = tasks.map((task) => {
+      if (task.id === idTask) {
+        return { ...task, text: taskEdited, status: statusEdited };
+      }
+      return task;
+    });
+    // console.log(updatedTasks);
+    setTasks(updatedTasks);
+  };
+
   return (
     <section>
       <AddTasks create={createTask} />
       <Tasks
         data={tasks}
         remove={removeTask}
+        update={updateTask}
       />
     </section>
   );
