@@ -1,0 +1,11 @@
+header {
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+header h1 {
+  font-family: Helvetica, Arial;
+  text-decoration: underline;
+}
